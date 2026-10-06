@@ -3,4 +3,4 @@ from app import app
 def test_home():
     r = app.test_client().get("/")
     assert r.status_code == 200
-    assert b"Hello from auto build!" in r.datas
+    assert b"Hello from auto build!" in r.data
